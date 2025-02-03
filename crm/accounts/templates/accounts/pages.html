@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {% include 'accounts/head.html' %}
+    </head>
+
+    <body>
+
+          <!-- Spinner Start -->
+          {% include 'accounts/spinner.html' %}
+          <!-- Spinner End -->
+  
+  
+          <!-- Navbar start -->
+          {% include 'accounts/Navbar.html' %}
+          <!-- Navbar End -->
+  
+  
+          <!-- Modal Search Start -->
+          {% include 'accounts/SearchModal.html' %}
+          <!-- Modal Search End -->
+  
+  
+          <!-- Single Page Header start -->
+          {% include 'accounts/SinglePage.html' %}
+          <!-- Single Page Header End -->
+
+
+        <!-- Cart checkout and tesimonial Page Start -->
+         {% block content %}
+
+         {%  endblock %}
+        <!-- Cart checkout and tesimonial Page End -->
+
+
+        <!-- Footer Start -->
+        {% include 'accounts/Footer.html' %}
+        <!-- Footer End -->
+    
+        <!-- Copyright Start -->
+        {% include 'accounts/Copyright.html' %}
+        <!-- Copyright End -->
+    
+        <!-- Back to Top -->
+        {% include 'accounts/BacktoTop.html' %}
+    
+        <!-- JavaScript Libraries -->
+       {% include 'accounts/TemplateJavascript.html' %}
+
+    </body>
+
+</html>
+
